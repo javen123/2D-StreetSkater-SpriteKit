@@ -14,6 +14,11 @@
 		8F1A54CB1C1B849D00A1BAAF /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A54CA1C1B849D00A1BAAF /* Game.xcassets */; };
 		8F1A54CE1C1B849D00A1BAAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A54CC1C1B849D00A1BAAF /* Main.storyboard */; };
 		8F1A54D01C1B849D00A1BAAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A54CF1C1B849D00A1BAAF /* Assets.xcassets */; };
+		8F6BD6991C1F7688005D6378 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD6981C1F7688005D6378 /* Obstacle.swift */; };
+		8F6BD69B1C1F7A74005D6378 /* SKNodeUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD69A1C1F7A74005D6378 /* SKNodeUpdate.swift */; };
+		8F6BD69D1C1F7B3B005D6378 /* Dumpster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD69C1C1F7B3B005D6378 /* Dumpster.swift */; };
+		8F6BD6A11C206AA4005D6378 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD6A01C206AA4005D6378 /* Player.swift */; };
+		8F6BD6A41C207038005D6378 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BD6A31C207038005D6378 /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		8F1A54CD1C1B849D00A1BAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F1A54CF1C1B849D00A1BAAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F1A54D11C1B849E00A1BAAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6BD6981C1F7688005D6378 /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		8F6BD69A1C1F7A74005D6378 /* SKNodeUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKNodeUpdate.swift; sourceTree = "<group>"; };
+		8F6BD69C1C1F7B3B005D6378 /* Dumpster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dumpster.swift; sourceTree = "<group>"; };
+		8F6BD6A01C206AA4005D6378 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8F6BD6A31C207038005D6378 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,53 @@
 		8F1A54C11C1B849D00A1BAAF /* MyGameTvOs */ = {
 			isa = PBXGroup;
 			children = (
-				8F1A54C21C1B849D00A1BAAF /* AppDelegate.swift */,
+				8F6BD6A21C20702B005D6378 /* Services */,
+				8F6BD69F1C1F7CA9005D6378 /* Controllers */,
+				8F6BD69E1C1F7C9A005D6378 /* Scenes */,
+				8F6BD6971C1F7662005D6378 /* Ojects */,
 				8F1A54C41C1B849D00A1BAAF /* GameScene.sks */,
-				8F1A54C61C1B849D00A1BAAF /* GameScene.swift */,
-				8F1A54C81C1B849D00A1BAAF /* GameViewController.swift */,
 				8F1A54CA1C1B849D00A1BAAF /* Game.xcassets */,
 				8F1A54CC1C1B849D00A1BAAF /* Main.storyboard */,
 				8F1A54CF1C1B849D00A1BAAF /* Assets.xcassets */,
 				8F1A54D11C1B849E00A1BAAF /* Info.plist */,
 			);
 			path = MyGameTvOs;
+			sourceTree = "<group>";
+		};
+		8F6BD6971C1F7662005D6378 /* Ojects */ = {
+			isa = PBXGroup;
+			children = (
+				8F6BD69A1C1F7A74005D6378 /* SKNodeUpdate.swift */,
+				8F6BD6981C1F7688005D6378 /* Obstacle.swift */,
+				8F6BD69C1C1F7B3B005D6378 /* Dumpster.swift */,
+				8F6BD6A01C206AA4005D6378 /* Player.swift */,
+			);
+			name = Ojects;
+			sourceTree = "<group>";
+		};
+		8F6BD69E1C1F7C9A005D6378 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A54C61C1B849D00A1BAAF /* GameScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		8F6BD69F1C1F7CA9005D6378 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F1A54C21C1B849D00A1BAAF /* AppDelegate.swift */,
+				8F1A54C81C1B849D00A1BAAF /* GameViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8F6BD6A21C20702B005D6378 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F6BD6A31C207038005D6378 /* GameManager.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +149,7 @@
 				TargetAttributes = {
 					8F1A54BE1C1B849D00A1BAAF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9Y82XZD3R;
 					};
 				};
 			};
@@ -143,7 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F1A54C71C1B849D00A1BAAF /* GameScene.swift in Sources */,
+				8F6BD6A41C207038005D6378 /* GameManager.swift in Sources */,
 				8F1A54C91C1B849D00A1BAAF /* GameViewController.swift in Sources */,
+				8F6BD69B1C1F7A74005D6378 /* SKNodeUpdate.swift in Sources */,
+				8F6BD69D1C1F7B3B005D6378 /* Dumpster.swift in Sources */,
+				8F6BD6A11C206AA4005D6378 /* Player.swift in Sources */,
+				8F6BD6991C1F7688005D6378 /* Obstacle.swift in Sources */,
 				8F1A54C31C1B849D00A1BAAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,10 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyGameTvOs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neva.MyGameTvOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +316,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyGameTvOs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.neva.MyGameTvOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +345,7 @@
 				8F1A54D61C1B849E00A1BAAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
